@@ -1,14 +1,27 @@
 package com.example.projetoaula.domain;
 
-import lombok.Data;
-
-@Data
 public class Greeting {
-
-    private String saudacao;
-
-    public Greeting (){
-        this.saudacao = "Hello World";
+    private final long id;
+    private final String content;
+    
+    
+    public Greeting(long id, String content) {
+        this.id = id;
+        this.content = content;
     }
 
+
+    public long getId() {
+        return id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    @Override
+    public String toString() {
+        return "Greeting [content=" + content + ", id=" + id + "]";
+    }
+    
 }
