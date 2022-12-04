@@ -18,7 +18,7 @@ import com.example.projetoaula.service.GreetingService;
 
 
 @RestController
-@RequestMapping(value = "/greeting") // indica que o retorno será um objeto e não uma view HTML
+@RequestMapping(value = "/greeting2") // indica que o retorno será um objeto e não uma view HTML
 public class GreetingController {
     private static final String template = "Hello, %s!";
     private final AtomicLong counter = new AtomicLong();
